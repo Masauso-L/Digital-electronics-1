@@ -58,6 +58,9 @@ end architecture dataflow;
 ### Equations
 ![Distributives](Images/Distributives.png)
 
+*It should hold that f(x,y,z)=g(x,y,z)*, where f(x,y,z) are expressions
+on the left side of `=` and g(x,y,z) equivalent expressions on the right.
+
 ### Listing of `design.vhd`
 ```VHDL
 -----------------------------------------------------------------------
