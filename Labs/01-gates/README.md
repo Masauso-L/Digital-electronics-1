@@ -1,9 +1,9 @@
 # Lab 1: Introduction to git and VHDL
 
 ## Links
-[*My github repository*](https://github.com/Masauso-L/Digital-electronics-1/blob/main/Labs/01-gates/README.md)
+*My github repository*: *https://github.com/Masauso-L/Digital-electronics-1/blob/main/Labs/01-gates/README.md*
 
-[*My EDAplayground*](https://www.edaplayground.com/playgrounds/user/155968)
+*My EDAplayground*: *https://www.edaplayground.com/playgrounds/user/155968*
 
 ## `Task 1: De Morgan's`
 ### Function and truth table
