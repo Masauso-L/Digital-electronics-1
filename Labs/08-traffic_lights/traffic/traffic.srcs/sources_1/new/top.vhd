@@ -21,7 +21,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity top is
     Port ( CLK100MHZ : in STD_LOGIC;
-           BTNC : in STD_LOGIC;
+           SW      : in std_logic_vector(1 downto 0);
+           BTNC    : in STD_LOGIC;
            LED16_R : out STD_LOGIC;
            LED16_G : out STD_LOGIC;
            LED16_B : out STD_LOGIC;
@@ -34,5 +35,21 @@ architecture Behavioral of top is
 
 begin
 
+    smart_tlc : entity work.smat_tlc
+        port map(
+            clk         => CLK100MHZ,
+            reset       => BTNC,
+            
+            sensor1     =>  SW(0),
+            sensor2     =>  SW(1),
+            
+            south_o(0)  => LED16_B,
+            south_o(1)  => LED16_G,
+            south_o(2)  => LED16_R,
+            
+            west_o(0)   => LED17_B,
+            west_o(1)   => LED17_G,
+            west_o(2)   => LED17_R
+        );
 
 end Behavioral;
